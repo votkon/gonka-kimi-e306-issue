@@ -62,37 +62,44 @@ Reward formula: `323,000 × e^(−0.000475 × (epoch − 1))` GONKA.
 
 ## Root Cause Evidence
 
-The failure is evidenced by the conf_w/weight ratio distribution per epoch.
-Non-Kimi operators are shown for comparison.
+`confirmation_weight` is initialized at epoch start from a fresh ML-node
+measurement and can only be lowered by subsequent cPoC min-take events. The
+diagnostic signal is whether `conf_w < weight` at epoch end — if so, at least
+one cPoC event drove a penalty for that node. Non-Kimi operators are shown for
+comparison.
 
 ### Epoch 305 — Baseline (clean)
 
-Kimi operator confirm ratios: 37–94%. Non-Kimi: similar range. No systematic
-suppression pattern concentrated on Kimi operators. **Out of scope.**
+No systematic conf_w suppression concentrated on Kimi operators. **Out of scope.**
 
 ### Epoch 306 — First failure
 
-Non-Kimi operators: 97–125% confirm ratios.
-Kimi operators:
+All non-Kimi operators: `conf_w ≥ weight` (no cPoC penalty).
+Kimi operators with `conf_w < weight` (penalized by cPoC events):
 
-| Address | weight | conf_w | ratio | models |
-|---------|--------|--------|-------|--------|
-| `gonka1jfv9n2af9y8xgnn6834mnp924vkpucmvchsq8d` | 9,173 | 0 | 0.00% | Kimi only |
-| `gonka1qa90tgczc0k5dvk4l5nvlf5y6phgm6mg22sfjv` | 0 | 0 | 0.00% | Kimi only |
-| `gonka1yal0ysgzc860zt3y8cds8656tnueusgymftvkw` | 29,693 | 4,724 | 15.91% | Kimi + other |
-| `gonka1kx9mca3xm8u8ypzfuhmxey66u0ufxhs7nm6wc5` | 12,012 | 2,194 | 18.27% | Kimi + other |
-| `gonka1gvrrhjmy4w4mayvs2s5l23edj8ertcmtd2v4zr` | 24,062 | 4,805 | 19.97% | Kimi + other |
-| `gonka1y2a9p56kv044327uycmqdexl7zs82fs5ryv5le` | 3,885 | 1,307 | 33.64% | Kimi + other |
-| `gonka168rtjfkszuhcggg4dfyse4yh7xn9zwfglnkns2` | 11,768 | 5,916 | 50.27% | Kimi + other |
-| `gonka1gtdrqh9jpkqxdaskxkpwjpy2q284q8qnvg58uj` | 9,202 | 4,814 | 52.31% | Kimi only |
-| `gonka125n6kr5gvdup0lndfkps7t6rd6592panhrg3np` | 24,804 | 17,394 | 70.13% | Kimi only |
-| `gonka1ym3np7guxart483yfdxnlztuazx22cjt0e4a2p` | 5,841 | 4,818 | 82.49% | Kimi + other |
-| `gonka1d694r00czmq75txghwjcuk07lxvc8d4ekgsha0` | 41,468 | 36,235 | 87.38% | Kimi + other |
-| `gonka1skw86pm4dvfhzslu5a9gsc98ahspalge8rprp4` | 8,329 | 9,052 | 108.68% | Kimi only |
-| `gonka16j7xfk3hvguy5gz95mzg3p5dkuwla7aux03kdw` | 8,229 | 8,963 | 108.92% | Kimi only |
-| `gonka1ujg4pt8crhxdymnsatalzdj0hhkgfqjmlp9zel` | 8,150 | 9,054 | 111.09% | Kimi only |
-| `gonka1uhqpup9fev3zahlx6n326lp0krznc6usjtx6lu` | 7,880 | 9,270 | 117.64% | Kimi only |
-| `gonka1f0u3y2wneer8zhz3ypw4x54h38cpa0qsy8ts3e` | 8,407 | 9,008 | 107.15% | Kimi only |
+| Address | weight | conf_w | models |
+|---------|--------|--------|--------|
+| `gonka1jfv9n2af9y8xgnn6834mnp924vkpucmvchsq8d` | 9,173 | 0 | Kimi only |
+| `gonka1yal0ysgzc860zt3y8cds8656tnueusgymftvkw` | 29,693 | 4,724 | Kimi + other |
+| `gonka1kx9mca3xm8u8ypzfuhmxey66u0ufxhs7nm6wc5` | 12,012 | 2,194 | Kimi + other |
+| `gonka1gvrrhjmy4w4mayvs2s5l23edj8ertcmtd2v4zr` | 24,062 | 4,805 | Kimi + other |
+| `gonka1y2a9p56kv044327uycmqdexl7zs82fs5ryv5le` | 3,885 | 1,307 | Kimi + other |
+| `gonka168rtjfkszuhcggg4dfyse4yh7xn9zwfglnkns2` | 11,768 | 5,916 | Kimi + other |
+| `gonka1gtdrqh9jpkqxdaskxkpwjpy2q284q8qnvg58uj` | 9,202 | 4,814 | Kimi only |
+| `gonka125n6kr5gvdup0lndfkps7t6rd6592panhrg3np` | 24,804 | 17,394 | Kimi only |
+| `gonka1ym3np7guxart483yfdxnlztuazx22cjt0e4a2p` | 5,841 | 4,818 | Kimi + other |
+| `gonka1d694r00czmq75txghwjcuk07lxvc8d4ekgsha0` | 41,468 | 36,235 | Kimi + other |
+
+Five additional pure-Kimi nodes had `conf_w ≥ weight` in e306 — no cPoC
+penalty was applied to them in this epoch. All five collapse to `conf_w = 0`
+in e307 (see investigation section).
+
+`gonka1qa90...` had `weight = 0` in vw (excluded from the group) — omitted.
+
+Screenshot evidence (CPoC #3, block 4,733,605 — within e306):
+`gonka1yal0ysgzc860zt3y8cds8656tnueusgymftvkw` showed weight=29,693,
+confirm ratio=20.31%, validation **NOT PASSED**, with 36.2% "No vote" weight —
+validators were unable to vote on this node's Kimi cPoC submissions.
 
 Screenshot evidence (CPoC #3, block 4,733,605 — within e306):
 `gonka1yal0ysgzc860zt3y8cds8656tnueusgymftvkw` showed weight=29,693,
@@ -166,28 +173,30 @@ validator and a Kimi participant means its own weight was suppressed at the same
 time it lost the ability to validate others. **The guardian is included in the
 compensation scope.**
 
-**Five pure-Kimi nodes appear healthy in e306 but collapse in e307.**
-The following nodes had confirm ratios above 100% in e306:
+**Five pure-Kimi nodes were not penalized in e306 but collapse to zero in e307.**
+`confirmation_weight` is initialized from a fresh ML-node measurement and
+lowered only by cPoC min-take. These five nodes ended e306 with `conf_w ≥ weight`
+— meaning no cPoC event drove a penalty against their Kimi nonces in e306:
 
-| Address | e306 ratio | e307 ratio |
-|---------|-----------|-----------|
-| `gonka1skw86pm4dvfhzslu5a9gsc98ahspalge8rprp4` | 108.7% | 0.0% |
-| `gonka16j7xfk3hvguy5gz95mzg3p5dkuwla7aux03kdw` | 108.9% | 0.0% |
-| `gonka1ujg4pt8crhxdymnsatalzdj0hhkgfqjmlp9zel` | 111.1% | 0.0% |
-| `gonka1uhqpup9fev3zahlx6n326lp0krznc6usjtx6lu` | 117.6% | — (excluded from vw) |
-| `gonka1f0u3y2wneer8zhz3ypw4x54h38cpa0qsy8ts3e` | 107.2% | 0.0% |
+| Address | e306 weight | e306 conf_w | e307 conf_w |
+|---------|------------|------------|------------|
+| `gonka1skw86pm4dvfhzslu5a9gsc98ahspalge8rprp4` | 8,329 | 9,052 | 0 |
+| `gonka16j7xfk3hvguy5gz95mzg3p5dkuwla7aux03kdw` | 8,229 | 8,963 | 0 |
+| `gonka1ujg4pt8crhxdymnsatalzdj0hhkgfqjmlp9zel` | 8,150 | 9,054 | 0 |
+| `gonka1uhqpup9fev3zahlx6n326lp0krznc6usjtx6lu` | 7,880 | 9,270 | — (excl. from vw) |
+| `gonka1f0u3y2wneer8zhz3ypw4x54h38cpa0qsy8ts3e` | 8,407 | 9,008 | 0 |
 
-All five ran Kimi exclusively (100% Kimi commits). Their apparent health in e306
-most likely reflects lucky cPoC sub-round timing — their nonces happened to land
-in a validation window before the guardian's Kimi path degraded completely. By
-e307 the degradation was total and all five show zero confirmation weight. This
-progression confirms a single root cause: the Kimi validation path failed
-progressively through e306 and reached total collapse in e307.
+All five ran Kimi exclusively. The fact that they escaped e306 unpenalized
+while other Kimi nodes were heavily suppressed most likely reflects cPoC
+sub-round assignment — their nonces landed in a validation window where the
+Kimi path had not yet fully degraded. By e307 the degradation was total and
+all five show `conf_w = 0`. This progression confirms a single root cause:
+the Kimi validation path failed progressively through e306 and reached total
+collapse in e307.
 
 These five nodes were **already included in the e307 compensation scope** (as
-zero-conf Kimi operators). They do not require separate compensation for e306
-since their e306 conf_w ratios were above the non-Kimi baseline and the formula
-naturally produces zero compensation for them in that epoch.
+zero-conf Kimi operators). They have no e306 compensation claim since no cPoC
+penalty was applied to them in that epoch.
 
 **Nodes with zero conf_w and no Kimi commits — independent failures.**
 Three nodes in e306 had zero confirmation weight but submitted no Kimi commits:
