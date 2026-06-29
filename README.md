@@ -146,6 +146,79 @@ GONKA actual vs 40,171.44 GONKA correct, resulting in 3,368.64 GONKA owed.
 
 ---
 
+## cPoC Health Investigation
+
+### Objective
+
+Determine whether on-chain data confirms that the validation failure originated
+from the guardian node, identify which other nodes shared the same failure mode,
+and verify that no nodes were missed by the compensation scope.
+
+### Findings
+
+**Guardian node is itself a Kimi participant.**
+`gonka1kx9mca3xm8u8ypzfuhmxey66u0ufxhs7nm6wc5` ran Kimi alongside MiniMax and
+Qwen (27.8% of its commits were Kimi). Its own confirm ratio collapsed in e306
+(0.183) and reached 0 in e307 and e309. This is consistent with a circular
+failure: the guardian node's Kimi instance degraded, preventing it from
+producing valid votes on other nodes' Kimi nonces. The guard being both a
+validator and a Kimi participant means its own weight was suppressed at the same
+time it lost the ability to validate others. **The guardian is included in the
+compensation scope.**
+
+**Five pure-Kimi nodes appear healthy in e306 but collapse in e307.**
+The following nodes had confirm ratios above 100% in e306:
+
+| Address | e306 ratio | e307 ratio |
+|---------|-----------|-----------|
+| `gonka1skw86pm4dvfhzslu5a9gsc98ahspalge8rprp4` | 108.7% | 0.0% |
+| `gonka16j7xfk3hvguy5gz95mzg3p5dkuwla7aux03kdw` | 108.9% | 0.0% |
+| `gonka1ujg4pt8crhxdymnsatalzdj0hhkgfqjmlp9zel` | 111.1% | 0.0% |
+| `gonka1uhqpup9fev3zahlx6n326lp0krznc6usjtx6lu` | 117.6% | — (excluded from vw) |
+| `gonka1f0u3y2wneer8zhz3ypw4x54h38cpa0qsy8ts3e` | 107.2% | 0.0% |
+
+All five ran Kimi exclusively (100% Kimi commits). Their apparent health in e306
+most likely reflects lucky cPoC sub-round timing — their nonces happened to land
+in a validation window before the guardian's Kimi path degraded completely. By
+e307 the degradation was total and all five show zero confirmation weight. This
+progression confirms a single root cause: the Kimi validation path failed
+progressively through e306 and reached total collapse in e307.
+
+These five nodes were **already included in the e307 compensation scope** (as
+zero-conf Kimi operators). They do not require separate compensation for e306
+since their e306 conf_w ratios were above the non-Kimi baseline and the formula
+naturally produces zero compensation for them in that epoch.
+
+**Nodes with zero conf_w and no Kimi commits — independent failures.**
+Three nodes in e306 had zero confirmation weight but submitted no Kimi commits:
+
+| Address | weight | models | e307 status |
+|---------|--------|--------|-------------|
+| `gonka17ug06ua2a3hxjuh4punrryl6qzz03sp42u9z9q` | 1,457 | Qwen only | not in vw |
+| `gonka1a3pkge3g33v3zdkq7qmycpjwpulms6ejt8z00f` | 119 | MiniMax only | not in vw |
+| `gonka1u4zxypjgcr8khlzefwjr0vwdaj2uzruw2cehj3` | 712 | Qwen only | not in vw |
+
+These failures are unrelated to the Kimi validation bug. They are excluded from
+compensation, consistent with the treatment of independent zero-conf operators
+in previous cases.
+
+**Compensation scope is complete.**
+All 10 nodes with Kimi commits and suppressed conf_w in e306 are in the
+compensation scope. All affected e307 and e309 Kimi nodes are covered. No
+on-chain evidence of Kimi-affected operators outside the current scope.
+
+### Pruning Limitation
+
+Detailed per-vote validation records (`list-inference-validation-details`,
+`poc-validations-for-stage`) are pruned by the archive node after 2 epochs
+(`inference_pruning_epoch_threshold: 2`). Per-stage conf_w snapshots within
+e306 are therefore unavailable. The analysis above is based on final epoch-end
+`validation_weights` from cached on-chain data, supplemented by the screenshot
+evidence from cPoC #3 (block 4,733,605) showing "No vote" weight suppression in
+real time.
+
+---
+
 ## Delegation Impact
 
 No delegation penalty compensation is required for any epoch in this case.
