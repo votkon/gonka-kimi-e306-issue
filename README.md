@@ -140,9 +140,9 @@ Kimi bootstrap operators:
 | `gonka1ym3np7guxart483yfdxnlztuazx22cjt0e4a2p` | 5,925 | 4,826 | 81.45% |
 | `gonka1kvmerzu64094dt9t62ea0cp75larh39ulzldum` | 64,193 | 58,810 | 91.61% |
 
-The same Kimi-specific suppression pattern is present. `gonka1kvmerzu...`
-(91.61%) is borderline; the calculation will determine whether compensation
-is due after subtracting actual rewards.
+The same Kimi-specific suppression pattern is present. All 5 operators are
+compensated — including `gonka1kvmerzu...` (91.61%) which received 36,802.80
+GONKA actual vs 40,171.44 GONKA correct, resulting in 3,368.64 GONKA owed.
 
 ---
 
