@@ -1,0 +1,72 @@
+{
+  "epoch": 309,
+  "epoch_theoretical_reward_ngonka": 279039213806477,
+  "epoch_theoretical_reward_gonka": 279039.21380647726,
+  "total_weight": 445898,
+  "denominator_mode": "total_weight",
+  "affected_participants": 5,
+  "total_compensation_ngonka": 21664278697741,
+  "total_compensation_gonka": 21664.278697741,
+  "compensation": [
+    {
+      "address": "gonka1yal0ysgzc860zt3y8cds8656tnueusgymftvkw",
+      "weight": 14011,
+      "confirmation_weight": 0,
+      "confirm_ratio": 0.0,
+      "correct_reward_ngonka": 8767965823220,
+      "correct_reward_gonka": 8767.9658232209,
+      "actual_rewards_ngonka": 0,
+      "actual_rewards_gonka": 0.0,
+      "compensation_ngonka": 8767965823220,
+      "compensation_gonka": 8767.9658232209
+    },
+    {
+      "address": "gonka10mmdjau4dnj8krs7sh7t7635ttnmq9u3vqgz09",
+      "weight": 9205,
+      "confirmation_weight": 3789,
+      "confirm_ratio": 41.16,
+      "correct_reward_ngonka": 5760411491167,
+      "correct_reward_gonka": 5760.411491167539,
+      "actual_rewards_ngonka": 0,
+      "actual_rewards_gonka": 0.0,
+      "compensation_ngonka": 5760411491167,
+      "compensation_gonka": 5760.411491167539
+    },
+    {
+      "address": "gonka1kvmerzu64094dt9t62ea0cp75larh39ulzldum",
+      "weight": 64193,
+      "confirmation_weight": 58810,
+      "confirm_ratio": 91.61,
+      "correct_reward_ngonka": 40171438875884,
+      "correct_reward_gonka": 40171.43887588461,
+      "actual_rewards_ngonka": 36802802802343,
+      "actual_rewards_gonka": 36802.802802343,
+      "compensation_ngonka": 3368636073541,
+      "compensation_gonka": 3368.636073541609
+    },
+    {
+      "address": "gonka1kx9mca3xm8u8ypzfuhmxey66u0ufxhs7nm6wc5",
+      "weight": 4921,
+      "confirmation_weight": 0,
+      "confirm_ratio": 0.0,
+      "correct_reward_ngonka": 3079520363719,
+      "correct_reward_gonka": 3079.5203637192244,
+      "actual_rewards_ngonka": 0,
+      "actual_rewards_gonka": 0.0,
+      "compensation_ngonka": 3079520363719,
+      "compensation_gonka": 3079.5203637192244
+    },
+    {
+      "address": "gonka1ym3np7guxart483yfdxnlztuazx22cjt0e4a2p",
+      "weight": 5925,
+      "confirmation_weight": 4826,
+      "confirm_ratio": 81.45,
+      "correct_reward_ngonka": 3707815109741,
+      "correct_reward_gonka": 3707.815109741192,
+      "actual_rewards_ngonka": 3020070163647,
+      "actual_rewards_gonka": 3020.070163647,
+      "compensation_ngonka": 687744946094,
+      "compensation_gonka": 687.7449460941918
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "commits": [
+    {
+      "participant_address": "gonka1qa90tgczc0k5dvk4l5nvlf5y6phgm6mg22sfjv",
+      "count": 129696,
+      "root_hash": "IEhuJelAjJU7p5OsLUrk5Qn+h9WxwDGzF5HtlB6PiV4=",
+      "hex_pub_key": "021cbe7c06fa9abc1c928e19db4d3aecc4858f5c9bcee571b1a65d6ebb262ad494",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1zktn8j65wlys8a8e38hqhf4y3x6m4x04zskkrx",
+      "count": 14400,
+      "root_hash": "RnRRSuPzh7vv65cka95Upivyquny6AtxxJEOSD+Al8w=",
+      "hex_pub_key": "0253882a59405c28b3c780b28bea241ca359c1a347d8f487d4d5595efb63169667",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1y2a9p56kv044327uycmqdexl7zs82fs5ryv5le",
+      "count": 5024,
+      "root_hash": "c9CoQYWHWd5h25YAdR2+3s/QchaNfmYsd1uXwkjpxwY=",
+      "hex_pub_key": "03f10763a0966c01fc7af4f98110d225db13326b5040b42ca5e453df62daf1c5fc",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1ym3np7guxart483yfdxnlztuazx22cjt0e4a2p",
+      "count": 16448,
+      "root_hash": "PA7Iu+hmPs75cYgh7F9J23fH4Wqs7GB6XB8MHC0mAow=",
+      "hex_pub_key": "03fc8b9c986a37e0bd35a80252656f16032c1638344a8e49e06722f80cb83da57b",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1ym3np7guxart483yfdxnlztuazx22cjt0e4a2p",
+      "count": 1232,
+      "root_hash": "9gNr6/mPSQbyS1NS7ieYA6HL1GHj0oAgfbwX7DNaArY=",
+      "hex_pub_key": "03fc8b9c986a37e0bd35a80252656f16032c1638344a8e49e06722f80cb83da57b",
+      "model_id": "moonshotai/Kimi-K2.6"
+    },
+    {
+      "participant_address": "gonka1yal0ysgzc860zt3y8cds8656tnueusgymftvkw",
+      "count": 13632,
+      "root_hash": "VNzj9ge4ZHrXsdCpf0R7+d7TEgn7Czw9hVR3uZ6gGq4=",
+      "hex_pub_key": "0355a7994822847fbcbb58de942a9b0f17d7fd7c02607b0f1af11e3e07d06d168f",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1yal0ysgzc860zt3y8cds8656tnueusgymftvkw",
+      "count": 13344,
+      "root_hash": "yMexHlMt66iARKtXID2N1uo+YyWo44RSen2iReHL3h0=",
+      "hex_pub_key": "0355a7994822847fbcbb58de942a9b0f17d7fd7c02607b0f1af11e3e07d06d168f",
+      "model_id": "moonshotai/Kimi-K2.6"
+    },
+    {
+      "participant_address": "gonka1830lqug50lse998x2lakk4pj5ypfumz5pasz0y",
+      "count": 27424,
+      "root_hash": "8op/E2TYBedyF1Cl7KCpl0lhbitG6OPqfpa+QR/wX7E=",
+      "hex_pub_key": "03e14d80c27e9cddcc9c497aa2c7801b3cbb44e6fb49e41b90fef63c724152bed3",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1gyk0aahvr3qeju4zx0nplfreej6cy4jjk8svc5",
+      "count": 2752,
+      "root_hash": "okXhC+EfPep1CdmV53EYGrxwRO6535p7lCWCNw0d+H8=",
+      "hex_pub_key": "02ba681e18d164b0beb7e6d813297ffc4e886456a23876054d5c83719157c500a9",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1gtdrqh9jpkqxdaskxkpwjpy2q284q8qnvg58uj",
+      "count": 44544,
+      "root_hash": "IlEySOLUd8A7EKvHFV6Er/SLuQ2pO+DAp2D6QAf+NUU=",
+      "hex_pub_key": "0332d0c24a4e75aa43a36ef57c8486e3354efaea51f1e2edb9800fc2075c680fd4",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1gvrrhjmy4w4mayvs2s5l23edj8ertcmtd2v4zr",
+      "count": 20768,
+      "root_hash": "FsuvTPxYCXYhAnIsms9lfvyyuaBfrAs8ta5vDgRP+jA=",
+      "hex_pub_key": "03ec5f9bf7833eb50bb97742d137907a80818ab2146ecf0bc9389f2701abbe3cc1",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1f0u3y2wneer8zhz3ypw4x54h38cpa0qsy8ts3e",
+      "count": 21216,
+      "root_hash": "LshY4xLmA0x1bIPzVSgZsUuIYmbW0q7/xoDkBVClFQ0=",
+      "hex_pub_key": "0226a972d39634e6ce8045cf24f8664caa911ce28cbab13159910aeba15255d39d",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka125n6kr5gvdup0lndfkps7t6rd6592panhrg3np",
+      "count": 20064,
+      "root_hash": "G5siwW1/XY5ZslFcGfSL1MrweL+jYtby9Ta8i1mN3XY=",
+      "hex_pub_key": "02d8526667dd1ffc273ec4cd843adb11f9223ae5355b5364cbd5e34aecafa895ff",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1tja3g2da45efhe2p83gk3whtussmgmtsdlgprt",
+      "count": 115072,
+      "root_hash": "OPxtFxClvqOx/bREGIud4h4jlmCVKZ0GhL4ZRsqhqwo=",
+      "hex_pub_key": "0374c37b34b4a20d88a5e121eef8ee2e8fe58abd8f1ebb70648001bfbaeaae95ec",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1tlvg4kjx7ljd5thgd5fkgh39q6lu8cmxupktgg",
+      "count": 7456,
+      "root_hash": "ZUBB9XnFHbEfavOpiUVA+abj2zDzHvnK+fRFrZUSMg8=",
+      "hex_pub_key": "03d24ebb0345d8d11846c78259042db0d705d8470d0069438a19504e2a2b789bfb",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1vjz8csqsr0ph0lv0yylc4auypnzrld7y6l2feu",
+      "count": 4672,
+      "root_hash": "FcZCOboDuy6MEIkaI1kuI1H6W13JATJFLH4e4/WsDTA=",
+      "hex_pub_key": "033b20f3463fdfc087062c5927a1ae6fac78cefa6ad834fcd896294173d00fb3c8",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1d9d7flwe2tqhwh0t5843sa57ezdlvludrh0clw",
+      "count": 7540,
+      "root_hash": "ET0jYvdQTcVpJDB0T88wsWTKWCaZ1ur94IuPlUqr2lM=",
+      "hex_pub_key": "029492489e67fa23d0b360f60a41fae1842287a9e16e0ea5696d7dee7d1720a0dc",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1dkl4mah5erqggvhqkpc8j3qs5tyuetgdy552cp",
+      "count": 4992,
+      "root_hash": "edCbRA/+OW9lgjn83XgHHUp1p3FfoxMSYJ1YXGtfCcY=",
+      "hex_pub_key": "03d097dab929d18c5502f296d9bbf89d7114d765049f0fe01e340d0f5b4f582a18",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1d694r00czmq75txghwjcuk07lxvc8d4ekgsha0",
+      "count": 184960,
+      "root_hash": "FilVRAd4iJslnen969NyFygWDbMHMkuXLsx9o8xMHco=",
+      "hex_pub_key": "029f9a1e6de87303e29e4d177e660138f68484956f0197189adb122d07bc46a4bb",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1007n977a7uda3pd9m6hftw8xcql0tc20m96myu",
+      "count": 76256,
+      "root_hash": "jLtXi3jokZ0qMERsG0l6IxN4QCibk2hdyXlIKgAQiig=",
+      "hex_pub_key": "02d99fdd17dc36bb07bf4c2846200a7f243b6690e31286c5eaa24d63f41d7209fa",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka10mmdjau4dnj8krs7sh7t7635ttnmq9u3vqgz09",
+      "count": 6688,
+      "root_hash": "UMymEhEegALzYi/nCAb9u4w+y9DyYt8TBWRHApe3XsA=",
+      "hex_pub_key": "03eb5692e7198e5398cc7807552b94d67d6c773cdf5c32a8d0b113bd0cb444d385",
+      "model_id": "moonshotai/Kimi-K2.6"
+    },
+    {
+      "participant_address": "gonka1s9tqdht34yrdvcstyytmqzaqqup2ms7jjy9589",
+      "count": 118624,
+      "root_hash": "/7uy55xzcCgicCdvq0ECpXyGwCZL04wevL96dublLlk=",
+      "hex_pub_key": "02f3278a99db9e8fed04e462e132b4e85e82fd8694a01091ee0f7571d07aa5b4a6",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1nmn039cgpkhmkzekpkfz3nkv9tcjckpn46jyrj",
+      "count": 21472,
+      "root_hash": "mvVPWZKU2yj3L7SKx076m2PhKPA3gfc0mMQZ7MflLbI=",
+      "hex_pub_key": "02dcfb4fac8962c02ca942f8a5d745988b34b15f4fd8a8d8c127910f6b3f9fdb40",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1kx9mca3xm8u8ypzfuhmxey66u0ufxhs7nm6wc5",
+      "count": 9792,
+      "root_hash": "mdS2pDM1uDWxUZVVHE+mmtHbHTAf6F4KLN/zXQCw9ao=",
+      "hex_pub_key": "03eca8933c0b6f2227da3cd38ab8ce35ec643f7e8060cbfa4710d732b6c29c9cd1",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1kx9mca3xm8u8ypzfuhmxey66u0ufxhs7nm6wc5",
+      "count": 3008,
+      "root_hash": "zgyBPVA+Az85Lcn8qbt2nFzPWKtjaonoNbRMuPuqH1k=",
+      "hex_pub_key": "03eca8933c0b6f2227da3cd38ab8ce35ec643f7e8060cbfa4710d732b6c29c9cd1",
+      "model_id": "moonshotai/Kimi-K2.6"
+    },
+    {
+      "participant_address": "gonka1kvmerzu64094dt9t62ea0cp75larh39ulzldum",
+      "count": 223456,
+      "root_hash": "lSpgzmxVoDdolzBPxlxujNiwhr0gvK5SZzXqdGBgweE=",
+      "hex_pub_key": "02e43c673a85721e1255df2ee551cbbcac978b8a575f86f34c1ea2d40abed7c545",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1kvmerzu64094dt9t62ea0cp75larh39ulzldum",
+      "count": 7040,
+      "root_hash": "4jCzi/uaMwaQe4DyPSpFiZ0f2xV4vRVcqOk1IZOQek4=",
+      "hex_pub_key": "02e43c673a85721e1255df2ee551cbbcac978b8a575f86f34c1ea2d40abed7c545",
+      "model_id": "moonshotai/Kimi-K2.6"
+    },
+    {
+      "participant_address": "gonka1hwvel7n3zuk6wruefuzc356l9myske9stckwnz",
+      "count": 73824,
+      "root_hash": "d7NigSHQWNXZBaMSdiRJRE/7Y+uPUXnW564vSup0Ebo=",
+      "hex_pub_key": "02a615a1bd04a683ba98a55319cf2bef8a7a94e73b8697c7911230cf7ec47c6945",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka168rtjfkszuhcggg4dfyse4yh7xn9zwfglnkns2",
+      "count": 19312,
+      "root_hash": "fhXbHq3YqAN95LK8mXBafd2XtxDEaOrKqwHt4TqrC40=",
+      "hex_pub_key": "03a1b25d015f0e33cfe4b9d2b675583f245752599f6567c069ebc047e7c80c543e",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka16dgkvx7mh609ntkzknckwaskgq9lcdp86j0skk",
+      "count": 258336,
+      "root_hash": "WjdCErW3aW6ikm7u0x4cikn2gkz31U0ayRRW4ndLPdQ=",
+      "hex_pub_key": "036b7618df0a23ba76e16fa26dde0313ceb2582e1e1afa7059d54b835d03740d0d",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1m58jds005cttwq2vt0p7yk6vy2aqg254cqqppf",
+      "count": 4480,
+      "root_hash": "1T+orcxe73zm5isFAkIXP0ZBjOST1mOZESaYvHushzY=",
+      "hex_pub_key": "027217eda517c8a0d702adaf2bf9ab68e0f611cf653d5e3cf61383396480fc9712",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    },
+    {
+      "participant_address": "gonka1ujg4pt8crhxdymnsatalzdj0hhkgfqjmlp9zel",
+      "count": 30304,
+      "root_hash": "FCIY+28tinv4Ym/HvP+MiLVcjwA0V4KTq5ducoTt8IA=",
+      "hex_pub_key": "024b83a93994ecfad1bc3b25a2c5015df745cd41aeb4db89fd83bb5d81d27871af",
+      "model_id": "MiniMaxAI/MiniMax-M2.7"
+    }
+  ]
+}
