@@ -5,7 +5,7 @@
 | **Case** | Kimi operator restitution: cPoC validation failure (e306–e307) + bootstrap carry-over (e309) |
 | Epochs affected | 306, 307, 309 |
 | Affected participants | 19 unique addresses |
-| Estimated compensation | 168,919.22 GONKA |
+| Estimated compensation | 175,082.07 GONKA |
 | **Cause** | The Kimi cPoC validation path failed starting in epoch 306. Validator nodes were unable to vote on submitted Kimi nonces, causing `confirmation_weight` to be severely suppressed for Kimi operators while non-Kimi operators ran normally. The issue persisted through e307 and carried into the e309 bootstrap attempt. |
 | **Can it happen again?** | Reduced risk — the validation infrastructure was reviewed and a guardian node is explicitly designated for Kimi bootstrap support from e311 onward (per proposal #79). |
 | **Mitigation / fix** | Proposal #78 (June 25, 2026) removed Kimi from the active model lineup. Proposal #79 (June 26, 2026, expedited) restored Kimi with `weight_scale_factor=0.9` and added `zai-org/GLM-5.2-FP8`. Epoch 311 is the first clean epoch. |
@@ -283,7 +283,7 @@ compensation   = max(0, correct_reward − actual_rewards_received)
 
 For the 2 operators excluded from `validation_weights` in e307
 (`gonka1qa90...`, `gonka1uhq...`): weight is reconstructed from on-chain
-commit counts × `weight_scale_factor` (same approach as e266 Part 1).
+commit counts × `weight_scale_factor`.
 
 Weight scale factor for `moonshotai/Kimi-K2.6` at e307 poc_start (height 4,736,392): `0.78`
 (from chain params — v0.2.13 had set this at block 4,267,300).
@@ -316,9 +316,9 @@ Bootstrap into e311: succeeded — epoch 311 is the first clean epoch.
 | Epoch | Issue | Affected | Compensation (GONKA) |
 |-------|-------|----------|----------------------|
 | 306 | cPoC validation failure | 15 | 53,538.64 |
-| 307 | cPoC validation failure (worsened) | 15 | 93,716.30 |
+| 307 | cPoC validation failure (worsened) | 15 | 99,879.16 |
 | 309 | Bootstrap carry-over | 5 | 21,664.28 |
-| **TOTAL** | | **19 unique addresses** | **168,919.22 GONKA** |
+| **TOTAL** | | **19 unique addresses** | **175,082.07 GONKA** |
 
 Per-address breakdown: [`aggregate_compensation.json`](aggregate_compensation.json) · [`aggregate_compensation.csv`](aggregate_compensation.csv)
 

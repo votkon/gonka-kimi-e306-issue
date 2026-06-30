@@ -1,6 +1,6 @@
 {
-  "grand_total_ngonka": 168919221131888,
-  "grand_total_gonka": 168919.221132,
+  "grand_total_ngonka": 175082074304992,
+  "grand_total_gonka": 175082.074305,
   "unique_addresses": 19,
   "epochs_covered": [
     "e306",
@@ -10,65 +10,65 @@
   "compensation": [
     {
       "address": "gonka1yal0ysgzc860zt3y8cds8656tnueusgymftvkw",
-      "total_ngonka": 44138962661939,
-      "total_gonka": 44138.962662,
+      "total_ngonka": 45002842624839,
+      "total_gonka": 45002.842625,
       "by_epoch": {
         "e306": 17188.979445,
-        "e307": 18182.017394,
+        "e307": 19045.897357,
         "e309": 8767.965823
       }
     },
     {
       "address": "gonka1gvrrhjmy4w4mayvs2s5l23edj8ertcmtd2v4zr",
-      "total_ngonka": 26484684692028,
-      "total_gonka": 26484.684692,
+      "total_ngonka": 27081229515922,
+      "total_gonka": 27081.229516,
       "by_epoch": {
         "e306": 13929.250106,
-        "e307": 12555.434586
+        "e307": 13151.97941
       }
     },
     {
       "address": "gonka125n6kr5gvdup0lndfkps7t6rd6592panhrg3np",
-      "total_ngonka": 10264790938585,
-      "total_gonka": 10264.790939,
+      "total_ngonka": 10752097867403,
+      "total_gonka": 10752.097867,
       "by_epoch": {
         "e306": 5296.843092,
-        "e307": 4967.947847
+        "e307": 5455.254776
       }
     },
     {
       "address": "gonka10mmdjau4dnj8krs7sh7t7635ttnmq9u3vqgz09",
-      "total_ngonka": 9003296799680,
-      "total_gonka": 9003.2968,
+      "total_ngonka": 9348214480985,
+      "total_gonka": 9348.214481,
       "by_epoch": {
-        "e307": 3242.885309,
+        "e307": 3587.80299,
         "e309": 5760.411491
       }
     },
     {
       "address": "gonka1gtdrqh9jpkqxdaskxkpwjpy2q284q8qnvg58uj",
-      "total_ngonka": 8726633738158,
-      "total_gonka": 8726.633738,
+      "total_ngonka": 9007313194119,
+      "total_gonka": 9007.313194,
       "by_epoch": {
         "e306": 2819.194083,
-        "e307": 5907.439656
+        "e307": 6188.119112
       }
     },
     {
       "address": "gonka168rtjfkszuhcggg4dfyse4yh7xn9zwfglnkns2",
-      "total_ngonka": 7476733414259,
-      "total_gonka": 7476.733414,
+      "total_ngonka": 7827216214294,
+      "total_gonka": 7827.216214,
       "by_epoch": {
         "e306": 100.147962,
-        "e307": 7376.585452
+        "e307": 7727.068252
       }
     },
     {
       "address": "gonka1qa90tgczc0k5dvk4l5nvlf5y6phgm6mg22sfjv",
-      "total_ngonka": 7403134610481,
-      "total_gonka": 7403.13461,
+      "total_ngonka": 7754878837428,
+      "total_gonka": 7754.878837,
       "by_epoch": {
-        "e307": 7403.13461
+        "e307": 7754.878837
       }
     },
     {
@@ -82,29 +82,63 @@
     },
     {
       "address": "gonka1uhqpup9fev3zahlx6n326lp0krznc6usjtx6lu",
-      "total_ngonka": 5534104078377,
-      "total_gonka": 5534.104078,
+      "total_ngonka": 5784283093297,
+      "total_gonka": 5784.283093,
       "by_epoch": {
         "e306": 268.604939,
-        "e307": 5265.499139
+        "e307": 5515.678154
       }
     },
     {
       "address": "gonka1f0u3y2wneer8zhz3ypw4x54h38cpa0qsy8ts3e",
-      "total_ngonka": 5406042649961,
-      "total_gonka": 5406.04265,
+      "total_ngonka": 5654647873240,
+      "total_gonka": 5654.647873,
       "by_epoch": {
         "e306": 173.666987,
-        "e307": 5232.375663
+        "e307": 5480.980887
       }
     },
     {
       "address": "gonka16j7xfk3hvguy5gz95mzg3p5dkuwla7aux03kdw",
-      "total_ngonka": 5364518158476,
-      "total_gonka": 5364.518158,
+      "total_ngonka": 5614918581345,
+      "total_gonka": 5614.918581,
       "by_epoch": {
         "e306": 94.359063,
-        "e307": 5270.159096
+        "e307": 5520.559519
+      }
+    },
+    {
+      "address": "gonka1skw86pm4dvfhzslu5a9gsc98ahspalge8rprp4",
+      "total_ngonka": 5546181336564,
+      "total_gonka": 5546.181337,
+      "by_epoch": {
+        "e306": 104.779082,
+        "e307": 5441.402255
+      }
+    },
+    {
+      "address": "gonka1aw77zuy536tufqd56zfq6ev3234u5ftty0zkte",
+      "total_ngonka": 5545625985548,
+      "total_gonka": 5545.625986,
+      "by_epoch": {
+        "e307": 5545.625986
+      }
+    },
+    {
+      "address": "gonka1d694r00czmq75txghwjcuk07lxvc8d4ekgsha0",
+      "total_ngonka": 5545062683374,
+      "total_gonka": 5545.062683,
+      "by_epoch": {
+        "e306": 2136.682825,
+        "e307": 3408.379858
+      }
+    },
+    {
+      "address": "gonka1ujg4pt8crhxdymnsatalzdj0hhkgfqjmlp9zel",
+      "total_ngonka": 5533752395951,
+      "total_gonka": 5533.752396,
+      "by_epoch": {
+        "e307": 5533.752396
       }
     },
     {
@@ -113,40 +147,6 @@
       "total_gonka": 5310.157561,
       "by_epoch": {
         "e306": 5310.157561
-      }
-    },
-    {
-      "address": "gonka1skw86pm4dvfhzslu5a9gsc98ahspalge8rprp4",
-      "total_ngonka": 5299371312875,
-      "total_gonka": 5299.371313,
-      "by_epoch": {
-        "e306": 104.779082,
-        "e307": 5194.592231
-      }
-    },
-    {
-      "address": "gonka1aw77zuy536tufqd56zfq6ev3234u5ftty0zkte",
-      "total_ngonka": 5294088602938,
-      "total_gonka": 5294.088603,
-      "by_epoch": {
-        "e307": 5294.088603
-      }
-    },
-    {
-      "address": "gonka1ujg4pt8crhxdymnsatalzdj0hhkgfqjmlp9zel",
-      "total_ngonka": 5282753573218,
-      "total_gonka": 5282.753573,
-      "by_epoch": {
-        "e307": 5282.753573
-      }
-    },
-    {
-      "address": "gonka1d694r00czmq75txghwjcuk07lxvc8d4ekgsha0",
-      "total_ngonka": 4315201363975,
-      "total_gonka": 4315.201364,
-      "by_epoch": {
-        "e306": 2136.682825,
-        "e307": 2178.518539
       }
     },
     {
@@ -167,11 +167,11 @@
     },
     {
       "address": "gonka1ym3np7guxart483yfdxnlztuazx22cjt0e4a2p",
-      "total_ngonka": 1547305742441,
-      "total_gonka": 1547.305742,
+      "total_ngonka": 1706210826186,
+      "total_gonka": 1706.210826,
       "by_epoch": {
         "e306": 496.687582,
-        "e307": 362.873215,
+        "e307": 521.778298,
         "e309": 687.744946
       }
     }

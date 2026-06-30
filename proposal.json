@@ -9,7 +9,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "44138962661939"
+              "amount": "45002842624839"
             }
           ]
         },
@@ -18,7 +18,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "26484684692028"
+              "amount": "27081229515922"
             }
           ]
         },
@@ -27,7 +27,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "10264790938585"
+              "amount": "10752097867403"
             }
           ]
         },
@@ -36,7 +36,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "9003296799680"
+              "amount": "9348214480985"
             }
           ]
         },
@@ -45,7 +45,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "8726633738158"
+              "amount": "9007313194119"
             }
           ]
         },
@@ -54,7 +54,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "7476733414259"
+              "amount": "7827216214294"
             }
           ]
         },
@@ -63,7 +63,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "7403134610481"
+              "amount": "7754878837428"
             }
           ]
         },
@@ -81,7 +81,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "5534104078377"
+              "amount": "5784283093297"
             }
           ]
         },
@@ -90,7 +90,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "5406042649961"
+              "amount": "5654647873240"
             }
           ]
         },
@@ -99,7 +99,43 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "5364518158476"
+              "amount": "5614918581345"
+            }
+          ]
+        },
+        {
+          "recipient": "gonka1skw86pm4dvfhzslu5a9gsc98ahspalge8rprp4",
+          "amount": [
+            {
+              "denom": "ngonka",
+              "amount": "5546181336564"
+            }
+          ]
+        },
+        {
+          "recipient": "gonka1aw77zuy536tufqd56zfq6ev3234u5ftty0zkte",
+          "amount": [
+            {
+              "denom": "ngonka",
+              "amount": "5545625985548"
+            }
+          ]
+        },
+        {
+          "recipient": "gonka1d694r00czmq75txghwjcuk07lxvc8d4ekgsha0",
+          "amount": [
+            {
+              "denom": "ngonka",
+              "amount": "5545062683374"
+            }
+          ]
+        },
+        {
+          "recipient": "gonka1ujg4pt8crhxdymnsatalzdj0hhkgfqjmlp9zel",
+          "amount": [
+            {
+              "denom": "ngonka",
+              "amount": "5533752395951"
             }
           ]
         },
@@ -109,42 +145,6 @@
             {
               "denom": "ngonka",
               "amount": "5310157560537"
-            }
-          ]
-        },
-        {
-          "recipient": "gonka1skw86pm4dvfhzslu5a9gsc98ahspalge8rprp4",
-          "amount": [
-            {
-              "denom": "ngonka",
-              "amount": "5299371312875"
-            }
-          ]
-        },
-        {
-          "recipient": "gonka1aw77zuy536tufqd56zfq6ev3234u5ftty0zkte",
-          "amount": [
-            {
-              "denom": "ngonka",
-              "amount": "5294088602938"
-            }
-          ]
-        },
-        {
-          "recipient": "gonka1ujg4pt8crhxdymnsatalzdj0hhkgfqjmlp9zel",
-          "amount": [
-            {
-              "denom": "ngonka",
-              "amount": "5282753573218"
-            }
-          ]
-        },
-        {
-          "recipient": "gonka1d694r00czmq75txghwjcuk07lxvc8d4ekgsha0",
-          "amount": [
-            {
-              "denom": "ngonka",
-              "amount": "4315201363975"
             }
           ]
         },
@@ -171,7 +171,7 @@
           "amount": [
             {
               "denom": "ngonka",
-              "amount": "1547305742441"
+              "amount": "1706210826186"
             }
           ]
         }
@@ -182,5 +182,5 @@
   "metadata": "https://github.com/votkon/gonka-kimi-e306-issue",
   "deposit": "50000ngonka",
   "title": "Kimi cPoC Restitution (epochs 306-309)",
-  "summary": "Distribute restitution for Kimi operators affected by cPoC validation failure in epochs 306-309. The Kimi validation path failed starting in e306 causing confirmation_weight suppression for Kimi operators while non-Kimi operators ran normally. Failure worsened in e307 and carried into the e309 bootstrap attempt. Total: 168,919.22 GONKA to 19 addresses, vested over 170 days (160 epochs)."
+  "summary": "Distribute restitution for Kimi operators affected by cPoC validation failure in epochs 306-309. The Kimi validation path failed starting in e306 causing confirmation_weight suppression for Kimi operators while non-Kimi operators ran normally. Failure worsened in e307 and carried into the e309 bootstrap attempt. Total: 175082.07 GONKA to 19 addresses, vested over 170 days (160 epochs)."
 }

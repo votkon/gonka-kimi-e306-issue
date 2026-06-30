@@ -20,8 +20,11 @@ Compensation methodology:
 
   For the 2 operators excluded from validation_weights entirely
   (gonka1qa90... and gonka1uhq...): weight is reconstructed from on-chain
-  commit counts × weight_scale_factor (same approach as e266 Part 1).
-  Their reconstructed weight is added to total_weight as denominator.
+  commit counts × weight_scale_factor.
+  The denominator is EpochGroupData.total_weight in all cases — the same
+  value the chain used to distribute MiniMax rewards. Reconstructed weight
+  is NOT added to the denominator; that would reduce everyone's share below
+  what the chain's own accounting implies.
 
   Weight scale factor for moonshotai/Kimi-K2.6 at e307 poc_start
   (height 4,736,392): 0.78
@@ -162,12 +165,10 @@ def main():
         reconstructed_weights[addr] = kimi_count * KIMI_WEIGHT_FACTOR
 
     total_reconstructed = sum(reconstructed_weights.values())
-    adjusted_total_weight = total_weight + total_reconstructed
 
     print(f"Epoch {EPOCH} theoretical reward pool     : {epoch_theoretical_reward / 1e9:,.4f} GONKA")
-    print(f"On-chain total_weight                    : {total_weight:,}")
+    print(f"On-chain total_weight (denominator)      : {total_weight:,}")
     print(f"Reconstructed weight (excluded ops)      : {total_reconstructed:,.1f}")
-    print(f"Adjusted total_weight (denominator)      : {adjusted_total_weight:,.1f}")
     print()
 
     skipped = []
@@ -187,7 +188,7 @@ def main():
             continue
 
         actual       = performance.get(addr, 0)
-        correct      = w / adjusted_total_weight * epoch_theoretical_reward
+        correct      = w / total_weight * epoch_theoretical_reward
         compensation = max(0.0, correct - actual)
 
         if compensation <= 0:
@@ -213,7 +214,7 @@ def main():
     for addr in sorted(excluded_from_vw):
         w_reconstructed = reconstructed_weights[addr]
         actual          = performance.get(addr, 0)
-        correct         = w_reconstructed / adjusted_total_weight * epoch_theoretical_reward
+        correct         = w_reconstructed / total_weight * epoch_theoretical_reward
         compensation    = max(0.0, correct - actual)
 
         if compensation <= 0:
@@ -291,9 +292,8 @@ def main():
             "epoch_theoretical_reward_gonka":  epoch_theoretical_reward / 1e9,
             "total_weight_on_chain":           total_weight,
             "total_reconstructed_weight":      total_reconstructed,
-            "adjusted_total_weight":           adjusted_total_weight,
             "kimi_weight_scale_factor":        KIMI_WEIGHT_FACTOR,
-            "denominator_mode":                "adjusted_total_weight",
+            "denominator_mode":                "total_weight_on_chain",
             "excluded_from_vw":                sorted(excluded_from_vw),
             "affected_participants":           len(results),
             "total_compensation_ngonka":       total_comp,
